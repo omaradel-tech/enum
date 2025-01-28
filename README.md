@@ -109,6 +109,46 @@ Then, retrieve the localized value:
 $translated = UserRole::getLabel(UserRole::ADMIN); // 'Administrator'
 ```
 
+To publish the translations files:
+
+```php
+php artisan vendor:publish --tag=enum-translations
+```
+
+Predefined Classes:
+1- BaseUserEnum Class:
+```php
+use OmarAdel\Enum\Enum;
+
+class BaseUserEnum extends Enum
+{
+    const ADMIN = 'Admin';
+    const USER = 'User';
+}
+```
+
+2- BaseStatusEnum Class:
+```php
+use OmarAdel\Enum\Enum;
+
+class BaseStatusEnum extends Enum
+{
+    const DRAFT = 'Draft';
+    const PENDING = 'Pending';
+    const PUBLISH = 'Published';
+}
+```
+
+3- BaseUserStatusEnum Class:
+```php
+use OmarAdel\Enum\Enum;
+
+class BaseUserStatusEnum extends Enum
+{
+     const ACTIVE = 'Active';
+    const IN_ACTIVE = 'In-Active';
+}
+```
 ## Contributing
 
 Contributions are welcome! Please submit a pull request or open an issue to discuss improvements or features.

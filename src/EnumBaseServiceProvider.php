@@ -16,7 +16,7 @@ class EnumBaseServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'enum');
 
         $this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang'),
-        ], 'enum-langs');
+            __DIR__.'/../resources/lang' => resource_path('lang/vendor/enum'),
+        ], 'enum-translations');
     }
 }

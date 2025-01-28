@@ -15,7 +15,7 @@ abstract class Enum implements CastsAttributes, JsonSerializable
 {
     protected static array $cache = [];
 
-    protected static $langPath = 'enums';
+    protected static $langPath = 'enum::enums';
 
     protected mixed $value = null;
 

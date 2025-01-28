@@ -37,6 +37,8 @@ class UserRole extends Enum
     const ADMIN = 'admin';
     const EDITOR = 'editor';
     const VIEWER = 'viewer';
+
+    public static $langPath = 'enum::user_roles';
 }
 ```
 
@@ -53,7 +55,7 @@ $adminRole = UserRole::ADMIN; // 'admin'
 Get the key associated with a specific value:
 
 ```php
-$key = UserRole::getKey('admin'); // 'ADMIN'
+$key = UserRole::ADMIN()->getKey(); // 'ADMIN'
 ```
 
 ### Converting Enum to Array
@@ -93,7 +95,7 @@ public function store(Request $request)
 
 To localize enum values, add translations in your `resources/lang` files:
 
-**resources/lang/en/user_roles.php:**
+**resources/lang/vendor/enum/en/user_roles.php:**
 
 ```php
 return [
@@ -109,14 +111,16 @@ Then, retrieve the localized value:
 $translated = UserRole::getLabel(UserRole::ADMIN); // 'Administrator'
 ```
 
-To publish the translations files:
+### To publish the translations files:
 
 ```php
 php artisan vendor:publish --tag=enum-translations
 ```
 
-Predefined Classes:
+### Predefined Classes:
+
 1- BaseUserEnum Class:
+
 ```php
 use OmarAdel\Enum\Enum;
 
@@ -128,6 +132,7 @@ class BaseUserEnum extends Enum
 ```
 
 2- BaseStatusEnum Class:
+
 ```php
 use OmarAdel\Enum\Enum;
 
@@ -140,6 +145,7 @@ class BaseStatusEnum extends Enum
 ```
 
 3- BaseUserStatusEnum Class:
+
 ```php
 use OmarAdel\Enum\Enum;
 

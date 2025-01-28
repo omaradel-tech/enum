@@ -3,7 +3,7 @@
 return [
     'admin' => 'مدير',
     'user' => 'مستخدم',
-    'Active' => 'نشط',
+    'active' => 'نشط',
     'in-active' => 'غير نشط',
     'draft' => 'مسودة',
     'pending' => 'قيد الانتظار',

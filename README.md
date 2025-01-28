@@ -93,7 +93,7 @@ public function store(Request $request)
 
 ### Localization
 
-To localize enum values, add translations in your `resources/lang` files:
+To localize enum values, add translations in your `/lang/vendor/enum` files:
 
 **resources/lang/vendor/enum/en/user_roles.php:**
 

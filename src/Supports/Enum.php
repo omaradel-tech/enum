@@ -71,7 +71,7 @@ abstract class Enum implements CastsAttributes, JsonSerializable
             unset($result['__default']);
         }
 
-        return apply_filters(BASE_FILTER_ENUM_ARRAY, $result, get_called_class());
+        return $result;
     }
 
     /**
@@ -138,7 +138,7 @@ abstract class Enum implements CastsAttributes, JsonSerializable
 
         $label = Lang::has($key) ? trans($key) : $value;
 
-        return apply_filters(BASE_FILTER_ENUM_LABEL, $label, get_called_class());
+        return $label;
     }
 
     /**
@@ -198,7 +198,7 @@ abstract class Enum implements CastsAttributes, JsonSerializable
 
     public function toHtml()
     {
-        return new HtmlString(apply_filters(BASE_FILTER_ENUM_HTML, $this->value, get_called_class()));
+        return new HtmlString($this->value);
     }
 
     public function get($model, string $key, $value, array $attributes): self

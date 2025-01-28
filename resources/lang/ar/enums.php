@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'Admin' => 'مدير',
-    'User' => 'مستخدم',
+    'admin' => 'مدير',
+    'user' => 'مستخدم',
     'Active' => 'نشط',
-    'In-Active' => 'غير نشط',
-    'Draft' => 'مسودة',
-    'Pending' => 'قيد الانتظار',
-    'Published' => 'منشور',
+    'in-active' => 'غير نشط',
+    'draft' => 'مسودة',
+    'pending' => 'قيد الانتظار',
+    'published' => 'منشور',
 ];

@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'Admin' => 'Admin',
-    'User' => 'User',
-    'Active' => 'Active',
-    'In-Active' => 'In-Active',
-    'Draft' => 'Draft',
-    'Pending' => 'Pending',
-    'Published' => 'Published',
+    'admin' => 'Admin',
+    'user' => 'User',
+    'active' => 'Active',
+    'in-active' => 'In-Active',
+    'draft' => 'Draft',
+    'pending' => 'Pending',
+    'published' => 'Published',
 ];

@@ -6,6 +6,6 @@ use omaradel\Enum\Supports\Enum;
 
 class BaseUserStatusEnum extends Enum
 {
-    const ACTIVE = 'Active';
-    const IN_ACTIVE = 'In-Active';
+    const ACTIVE = 'active';
+    const IN_ACTIVE = 'in-active';
 }

@@ -6,6 +6,6 @@ use omaradel\Enum\Supports\Enum;
 
 class BaseUserEnum extends Enum
 {
-    const ADMIN = 'Admin';
-    const USER = 'User';
+    const ADMIN = 'admin';
+    const USER = 'user';
 }

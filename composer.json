@@ -1,0 +1,28 @@
+{
+    "name": "omaradel/Enum",
+    "description": "An Enum package for Laravel provides an elegant and type-safe way to define and use enumerations in your Laravel application. Enumerations (Enums) are useful for representing a fixed set of constants with meaningful names, like user roles, order statuses, or payment methods.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Omar Adel",
+            "email": "omar.adel.omar818@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "omaradel\\Enum\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "omaradel\\Enum\\EnumBaseServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}

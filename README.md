@@ -20,7 +20,7 @@ A Laravel package that provides an easy and efficient way to work with enums in 
 Install the package via Composer:
 
 ```bash
-composer require omaradel-tech/enum
+composer require omaradel/enum
 ```
 
 ## Usage

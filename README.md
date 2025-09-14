@@ -30,7 +30,7 @@ composer require omaradel/enum
 Create a new enum by extending the `Enum` class:
 
 ```php
-use OmarAdel\Enum\Enum;
+use omaradel\Enum\Supports\Enum;
 
 class UserRole extends Enum
 {
@@ -122,7 +122,7 @@ php artisan vendor:publish --tag=enum-translations
 1- BaseUserEnum Class:
 
 ```php
-use OmarAdel\Enum\Enum;
+use omaradel\Enum\Supports\Enum;
 
 class BaseUserEnum extends Enum
 {
@@ -134,7 +134,7 @@ class BaseUserEnum extends Enum
 2- BaseStatusEnum Class:
 
 ```php
-use OmarAdel\Enum\Enum;
+use omaradel\Enum\Supports\Enum;
 
 class BaseStatusEnum extends Enum
 {
@@ -147,7 +147,7 @@ class BaseStatusEnum extends Enum
 3- BaseUserStatusEnum Class:
 
 ```php
-use OmarAdel\Enum\Enum;
+use omaradel\Enum\Supports\Enum;
 
 class BaseUserStatusEnum extends Enum
 {
